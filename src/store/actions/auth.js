@@ -29,7 +29,6 @@ export const logout = () => {
 };
 
 export const checkAuthTimeout = expirationTime => {
-    console.log('expoirationTime: ', expirationTime);
     return dispatch => {
         setTimeout(() => {
             dispatch(logout());
